@@ -1,4 +1,5 @@
 @extends('template.main')
+
 @section('content')
-<h1>nom</h1>
+<h1>prenom</h1>
 @endsection
