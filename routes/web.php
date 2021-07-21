@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Table;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')->name("welcome");
 });
 
 Route::get('/about', function () {
-    return view('pages.about');
+    return view('pages.about')->name("about");
 });
 
 Route::get('/home', function () {
-    return view('pages.home');
+    return view('pages.home')->name("home");
 });
+
+Route::get('/table', [Table::class,'index']);

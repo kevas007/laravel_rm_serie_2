@@ -13,6 +13,7 @@
 
     @include('partials.nav.navbar')
     @yield('content')
+    @include('partials.caroussel.carousel')
     @include('partials.footer.footer')
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
